@@ -1,0 +1,1 @@
+angular.module("hatApp", ["ui.router"]);

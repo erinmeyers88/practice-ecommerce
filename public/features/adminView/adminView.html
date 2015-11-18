@@ -1,0 +1,27 @@
+<h1>Admin View</h1>
+<h2>Add a new hat:</h2>
+
+<form action="">
+	<input type="text" ng-model="newHat.title" placeholder="Enter Title">
+	<input type="text" ng-model="newHat.description" placeholder="Enter Description">
+	<input type="text" ng-model="newHat.price" placeholder="Enter Price">
+	<input type="button" ng-click="addHat(newHat)" value="Submit">
+</form>
+
+
+<h2>Edit or Delete Hats</h2>
+
+<input type="button" value="Delete" ng-click="deleteHat()">
+<input type="button" value="Edit" ng-click="switch = !switch">
+
+<div ng-repeat="hat in hats">
+	<form action="">
+		<input type="checkbox" ng-click="getIdsToDelete(hat._id)"> {{hat.title}}
+	</form>
+	<form action="" ng-show="switch" id="hatData">
+		<input type="text" value="hat.title" ng-model="updatedHat.title">
+		<input type="text" ng-model="updatedHat.description">
+		<input type="text" ng-model="updatedHat.price">
+		<input type="button" ng-click="editHat(updatedHat)" value="Submit">
+	</form>
+</div>
