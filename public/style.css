@@ -1,0 +1,89 @@
+body {
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.hatList {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.hatBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 20%;	
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 7px;
+	border: 1px;
+	border-style: groove;
+	box-shadow: 2px 2px 2px #888888;
+	background-color: white;
+}
+
+.hatInfoBox {
+	margin: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+img {
+	height: 100px;
+	width: 100px;
+}
+
+h4 {
+	margin-top: 15px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+span {
+	font-weight: bold;
+}
+
+p {
+	margin: 5px;
+	text-align: center;
+}
+
+ui-view menu {
+	margin: 0;
+	padding: 0;
+	border-bottom: 2px;
+	border-bottom-style: ridge;
+}
+
+.menuInside {
+	display: flex;
+	justify-content: center;
+}
+
+.menuItem {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 30px;
+}
+
+div h2 {
+	text-align: left;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+.button {
+	margin: 10px;
+}

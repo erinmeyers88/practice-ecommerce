@@ -8,11 +8,12 @@ var hatModel = mongoose.Schema ({
 	title: {type: String, unique: true, required: true},
 	description: {type: String, required: true},
 	price: {type: Number, required: true, min: 0},
-	color: String,
-	pattern: String,
+	color: {type: String, default: "N/A"},
+	pattern: {type: String, default: "N/A"},
 	style: {type: String, required: true},
 	size: {type: String, required: true},
-	material: {type: String, required: true}
+	material: {type: String, required: true},
+	imageUrl: String
 	
 });
 

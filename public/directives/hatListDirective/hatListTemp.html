@@ -1,5 +1,14 @@
-<div ng-repeat="items in hats">
-	{{title}}
-	{{description}}
-	{{price}}
+<div class="hatList">
+	<div ng-repeat="hat in hats" class="hatBox">
+		<div class="hatInfoBox">
+		<h2 class="hatTitle">{{hat.title}}</h2>
+		<img ng-src="{{hat.imageUrl}}" alt="">
+		<h4>{{hat.description}}</h4>
+		<p><span>Style: </span> {{hat.style}} <span>Color: </span> {{hat.color}}</p>
+		<p><span>Pattern: </span> {{hat.pattern}}</p>
+		<p><span>Material: </span> {{hat.material}} <span>Size: </span> {{hat.size}}</p>
+		<h3><span>Price: </span>${{hat.price}}.00</h3>
+		</div>
+	</div>
+
 </div>

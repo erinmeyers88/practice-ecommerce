@@ -13,7 +13,6 @@ angular.module("hatApp")
 		//Add hat to $scope
 		$scope.addHat = function () {
 			hatService.addHat($scope.newHat).then(function (response) {
-				console.log(response);
 				$scope.hats.push(response);
 			});
 		};
@@ -45,7 +44,7 @@ angular.module("hatApp")
 		
 		$scope.prefillValue = {};
 		
-		$scope.switch = true;
+		$scope.switch = false;
 		
 		$scope.editHat = function () {
 			$scope.switch = true;
